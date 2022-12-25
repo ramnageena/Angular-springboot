@@ -1,0 +1,27 @@
+<div class="col-md-6 offset-md-3">
+  <h3>Update Employee</h3>
+
+  <form (ngSubmit)="onSubmit()">
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">First Name</label>
+      <input type="text" class="form-control" [(ngModel)]="employee.firstName" name="firstName">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Last Name</label>
+      <input type="text" class="form-control" [(ngModel)]="employee.lastName" name="lastName">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" [(ngModel)]="employee.email" name='email'>
+      <div class="form-text">
+        We'll never share your email with
+        anyone else.</div>
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+
+</div>
